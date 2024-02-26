@@ -10,7 +10,7 @@ const Person = () => {
                 <span className='name'>Jeremy Robson</span>
             </div>
 
-            <div>
+            <div className="weeks">
                 <span>Daily</span>
                 <span>Weekly</span>
                 <span>Mothly</span>
@@ -21,7 +21,7 @@ const Person = () => {
 
 const timeTrack = () => {
     return (
-        <div>
+        <div className="weeks">
 
         </div>
     );
