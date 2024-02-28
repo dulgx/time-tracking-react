@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import { Person } from './Components'
-import { timeTrack } from './Components'
+import { TimeTrack } from './Components'
 
 function App() {
   return (
     <div className='app-container'>
       <Person />
-      <timeTrack />
+      <TimeTrack />
     </div>
   )
 }
 
-export default App
+export default App;
