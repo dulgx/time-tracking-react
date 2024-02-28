@@ -22,16 +22,18 @@
 
 body {
   background-color: var(--very-dark-blue);
-}
-
-.app-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "Rubik", sans-serif;
+  height: auto;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #jeremy {
@@ -43,6 +45,7 @@ body {
 .person-info {
   width: 200px;
   height: 350px;
+  background-color: var(--dark-blue);
 }
 
 .person-part {
@@ -55,23 +58,23 @@ body {
 .weeks {
   background-color: var(--dark-blue);
   color: white;
-  height: 120px;
+  height: 100px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .tasks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-}
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
 }
 
 .task-grid {
-  width: 150px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   border-radius: 10px;
-  margin: 50px;
+  margin: 15px;
+  
 }
 
 .task-grid img {
@@ -80,6 +83,9 @@ body {
 
 .node-task {
   background-color: var(--dark-blue);
+  height: 100px;
+  margin-top: 50px;
+  border-radius: 9px;
 }
 
 .work {
@@ -105,3 +111,7 @@ body {
 .selfcare {
   background-color: var(--soft-orange-self-care);
 }
+ .icon{
+  height: 50px;
+  float: right;
+ }

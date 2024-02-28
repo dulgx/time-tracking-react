@@ -33,7 +33,7 @@ const TimeTrack = () => {
     return (
         <div className="tasks">
             <div className="task-grid work">
-                <img src={iconWork} alt="work-icon" />
+                <img src={iconWork} alt="work-icon" className="icon work-icon"/>
                 <div className="node-task">
                     <span>Work</span>
                     <span>···</span>
@@ -42,7 +42,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid play">
-                <img src={iconPlay} alt="play-icon" />
+                <img src={iconPlay} alt="play-icon" className="icon play-icon" />
                 <div className="node-task">
                     <span>Play</span>
                     <span>···</span>
@@ -51,7 +51,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid study">
-                <img src={iconStudy} alt="study-icon" />
+                <img src={iconStudy} alt="study-icon"  className="study-icon icon"/>
                 <div className="node-task">
                     <span>Study</span>
                     <span>···</span>
@@ -60,7 +60,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid exercise">
-                <img src={iconExercise} alt="exercise-icon" />
+                <img src={iconExercise} alt="exercise-icon" className="exercise-icon icon" />
                 <div className="node-task">
                     <span>Exercise</span>
                     <span>···</span>
@@ -69,7 +69,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid social">
-                <img src={iconSocial} alt="social-icon" />
+                <img src={iconSocial} alt="social-icon" className="social-icon icon" />
                 <div className="node-task">
                     <span>Social</span>
                     <span>···</span>
@@ -78,7 +78,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid selfcare">
-                <img src={iconSelfcare} alt="selfcare-icon" />
+                <img src={iconSelfcare} alt="selfcare-icon" className="selfcare-icon icon" />
                 <div className="node-task">
                     <span>Self Care</span>
                     <span>···</span>
