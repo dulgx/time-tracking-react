@@ -7,7 +7,7 @@ import iconSelfcare from './assets/icon-self-care.svg';
 import iconSocial from './assets/icon-social.svg';
 import iconStudy from './assets/icon-study.svg';
 import iconWork from './assets/icon-work.svg';
-import { GoogleFont } from 'react-google-fonts';
+
 
 
 
