@@ -1,16 +1,12 @@
 import React from "react";
 import './App.css'
 import jeremyImage from './assets/image-jeremy.png';
-import iconEllipsis from './assets/icon-ellipsis.svg';
 import iconExercise from './assets/icon-exercise.svg'; // Corrected file path
 import iconPlay from './assets/icon-play.svg';
 import iconSelfcare from './assets/icon-self-care.svg';
 import iconSocial from './assets/icon-social.svg';
 import iconStudy from './assets/icon-study.svg';
 import iconWork from './assets/icon-work.svg';
-import GoogleFont from 'react-google-fonts';
-
-
 
 
 const Person = () => {
