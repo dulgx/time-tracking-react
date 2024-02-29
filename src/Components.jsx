@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import './App.css'
 import jeremyImage from './assets/image-jeremy.png';
 import iconEllipsis from './assets/icon-ellipsis.svg';
 import iconExercise from './assets/icon-exercise.svg'; // Corrected file path
@@ -7,86 +8,119 @@ import iconSelfcare from './assets/icon-self-care.svg';
 import iconSocial from './assets/icon-social.svg';
 import iconStudy from './assets/icon-study.svg';
 import iconWork from './assets/icon-work.svg';
+import GoogleFont from 'react-google-fonts';
 
 
 
 
 const Person = () => {
     return (
-        <div className='person-info'>
-            <div className='person-part'>
-                <img src={jeremyImage} alt="image-jeremy" id='jeremy' />
-                <div>
-                    <p>Report for</p>
-                    <span className='name'>Jeremy Robson</span>
+        <>
+            <div className='person-info'>
+                <div className='person-part'>
+                    <img src={jeremyImage} alt="image-jeremy" id='jeremy' />
+                    <div>
+                        <p>Report for</p>
+                        <span className='name'>Jeremy Robson</span>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div className="weeks">
-                <p>Daily</p>
-                <p>Weekly</p>
-                <p>Mothly</p>
-            </div>
-        </div>
+                <div className="weeks">
+                    <p>Daily</p>
+                    <p>Weekly</p>
+                    <p>Mothly</p>
+                </div>
+            </div></>
     );
 }
 
 const TimeTrack = () => {
     return (
         <div className="tasks">
-            <div className="task-grid work">
-                <img src={iconWork} alt="work-icon" className="icon work-icon" />
+            <div className="task-grid work" >
+                <div id="image">
+                    <img src={iconWork} alt="work-icon" className="icon" />
+                </div>
+
                 <div className="node-task">
-                    <span>Work</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Work</p>
+                        <span>···</span>
+                    </div>
+
                     <h1>32hrs</h1>
-                    <p>Last week - 36hrs</p>
+                    <p className="lastweek">Last week - 36hrs</p>
                 </div>
             </div>
             <div className="task-grid play">
-                <img src={iconPlay} alt="play-icon" className="icon play-icon" />
+                <div id="image">
+                    <img src={iconPlay} alt="play-icon" className="icon play-icon" />
+                </div>
+
                 <div className="node-task">
-                    <span>Play</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Play</p>
+                        <span>···</span>
+                    </div>
+
                     <h1>10hrs</h1>
-                    <p>Last week - 8hrs</p>
+                    <p className="lastweek">Last week - 8hrs</p>
                 </div>
             </div>
             <div className="task-grid study">
-                <img src={iconStudy} alt="study-icon" className="study-icon icon" />
+                <div id="image">
+                    <img src={iconStudy} alt="study-icon" className="study-icon icon" />
+                </div>
+
                 <div className="node-task">
-                    <span>Study</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Study</p>
+                        <span>···</span>
+                    </div>
                     <h1>4hrs</h1>
-                    <p>Last week - 7hrs</p>
+                    <p className="lastweek">Last week - 7hrs</p>
                 </div>
             </div>
             <div className="task-grid exercise">
-                <img src={iconExercise} alt="exercise-icon" className="exercise-icon icon" />
+                <div id="image">
+                    <img src={iconExercise} alt="exercise-icon" className="exercise-icon icon" />
+                </div>
                 <div className="node-task">
-                    <span>Exercise</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Exercise</p>
+                        <span>···</span>
+                    </div>
                     <h1>4hrs</h1>
-                    <p>Last week - 5hrs</p>
+                    <p className="lastweek">Last week - 5hrs</p>
                 </div>
             </div>
             <div className="task-grid social">
-                <img src={iconSocial} alt="social-icon" className="social-icon icon" />
+                <div id="image">
+                    <img src={iconSocial} alt="social-icon" className="social-icon icon" />
+                </div>
+
                 <div className="node-task">
-                    <span>Social</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Social</p>
+                        <span>···</span>
+                    </div>
                     <h1>5hrs</h1>
-                    <p>Last week - 10hrs</p>
+                    <p className="lastweek">Last week - 10hrs</p>
                 </div>
             </div>
             <div className="task-grid selfcare">
-                <img src={iconSelfcare} alt="selfcare-icon" className="selfcare-icon icon" />
+                <div id="image">
+                    <img src={iconSelfcare} alt="selfcare-icon" className="selfcare-icon icon" />
+                </div>
+
                 <div className="node-task">
-                    <span>Self Care</span>
-                    <span>···</span>
+                    <div className="text">
+                        <p>Self Care</p>
+                        <span>···</span>
+                    </div>
                     <h1>2hrs</h1>
-                    <p>Last week - 2hrs</p>
+                    <p className="lastweek">Last week - 2hrs</p>
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-
+  font-family: 'Rubik', sans-serif;
 
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .person-info {
-  width: 300px;
+  width: 280px;
   height: 450px;
   background-color: var(--dark-blue);
   border-radius: 10px;
@@ -68,7 +68,7 @@ body {
 
 .person-part div {
   margin-top: 25px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .person-part span {
@@ -89,7 +89,14 @@ body {
 .weeks p {
   margin: 15px;
   margin-left: 25px;
+  color: var(--pale-blue);
 }
+
+.weeks p:hover {
+  color: white;
+  cursor: pointer;
+}
+
 
 .tasks {
   display: grid;
@@ -111,9 +118,28 @@ body {
 
 .node-task {
   background-color: var(--dark-blue);
-  height: 170px;
-  margin-top: 40px;
+  height: 130px;
+  margin-top: -15px;
   border-radius: 9px;
+  position: relative;
+  padding: 25px;
+}
+
+.node-task .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.node-task h1 {
+  font-size: 42px;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.node-task .lastweek {
+  margin-top: 15px;
+  font-weight: 200;
+  color: var(--pale-blue);
 }
 
 .work {
@@ -140,8 +166,16 @@ body {
   background-color: var(--soft-orange-self-care);
 }
 
+#image {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .icon {
   height: 50px;
-  float: right;
-  z-index: -1;
+}
+
+.node-task:hover {
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
 }
