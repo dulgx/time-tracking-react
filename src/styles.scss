@@ -1,0 +1,97 @@
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+    height: 100vh;
+    margin: 40px;
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--almost-white);
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--medium-gray);
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    #Logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--medium-gray);
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    .login {
+        height: 30px;
+    }
+
+    #Register {
+        border-style: solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 8px;
+        margin-top: 13px;
+    }
+
+    #Start {
+        margin-left: 100px;
+    }
+
+    #DropdownContent {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 35px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+        img {
+            height: 15px;
+            margin-right: 15px;
+        }
+
+        a {
+            margin: 5px;
+        }
+    }
+
+    #Features:hover #DropdownContent {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #DropdownCompany {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: beige;
+    }
+}
