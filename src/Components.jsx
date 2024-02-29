@@ -16,14 +16,17 @@ const Person = () => {
         <div className='person-info'>
             <div className='person-part'>
                 <img src={jeremyImage} alt="image-jeremy" id='jeremy' />
-                <p>Report for</p>
-                <span className='name'>Jeremy Robson</span>
+                <div>
+                    <p>Report for</p>
+                    <span className='name'>Jeremy Robson</span>
+                </div>
+
             </div>
 
             <div className="weeks">
-                <span>Daily</span>
-                <span>Weekly</span>
-                <span>Mothly</span>
+                <p>Daily</p>
+                <p>Weekly</p>
+                <p>Mothly</p>
             </div>
         </div>
     );
@@ -33,7 +36,7 @@ const TimeTrack = () => {
     return (
         <div className="tasks">
             <div className="task-grid work">
-                <img src={iconWork} alt="work-icon" className="icon work-icon"/>
+                <img src={iconWork} alt="work-icon" className="icon work-icon" />
                 <div className="node-task">
                     <span>Work</span>
                     <span>···</span>
@@ -51,7 +54,7 @@ const TimeTrack = () => {
                 </div>
             </div>
             <div className="task-grid study">
-                <img src={iconStudy} alt="study-icon"  className="study-icon icon"/>
+                <img src={iconStudy} alt="study-icon" className="study-icon icon" />
                 <div className="node-task">
                     <span>Study</span>
                     <span>···</span>
